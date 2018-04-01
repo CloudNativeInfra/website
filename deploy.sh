@@ -3,7 +3,7 @@ echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
 # Build the project.
 hugo
-cp -r _public/* ../cloudnativeinfra.github.io
+cp -r public/* ../cloudnativeinfra.github.io
 
 # Go To github pages folder
 cd ../cloudnativeinfra.github.io

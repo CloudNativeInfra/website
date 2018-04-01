@@ -6,6 +6,8 @@ theme = "kube"
 DefaultContentLanguage = "en"
 description = "Cloud Native Infrastruture and Applications"
 Paginate = 4
+pygmentsUseClasses = false
+pygmentCodeFences = true
 
 [Params]
   RSSLink = "/index.xml"
