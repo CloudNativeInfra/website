@@ -1,0 +1,17 @@
+body.page-kube {
+    background-image: url(../img/bg/background.jpg)
+}
+#top #top-brand span, #top #top-brand a {
+    background: none;
+    text-indent: -9999px;
+    width: 70px;
+    line-height: 11px;
+    background-repeat: no-repeat;
+    font-size: 17px;
+    font-weight: 900;
+    color: #054b92;
+    letter-spacing: .03em;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 0 1px 1px rgba(0,0,0,.5);
+}

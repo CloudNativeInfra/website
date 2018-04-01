@@ -1,0 +1,1 @@
+This repo used for [hugo](https://gohugo.io) to generate the HTML for [cloudnativego.com](https://cloudnativego.com).
