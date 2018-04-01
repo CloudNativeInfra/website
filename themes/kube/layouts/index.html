@@ -1,0 +1,64 @@
+{{ define "title"}} {{ .Site.Title}} {{end}} {{ define "header"}} {{ partial "header" .}} {{end}} {{ define "main"}}
+
+<div id="main">
+    <div id="hero">
+        <h1>{{.Title}}</h1>
+        <p>{{.Description}}</p>
+    </div>
+    <div id="action-buttons">
+        <a class="button primary big" href="https://jimmysong.io/migrating-to-cloud-native-application-architectures/">Migrating to Cloud Native</a> <a class="button outline big" href="https://github.com/cloudnativeinfra">View on Github</a>
+        <p>Let's rock it!</p>
+    </div>
+    <div class="message focus" data-component="message"> <span class="close small"></span>
+        <mark>Cloud Native Infrastructure</mark>中文版即将上线，敬请关注...
+    </div>
+    <div id="kube-features">
+        <div class="row gutters">
+            <div class="col col-4 item">
+                <figure>
+                    <img alt="Containers" height="48" src="{{ "/img/home/containers.png" | relURL }}" width="48">
+                </figure>
+                <h3>Contaiers</h3>
+                <p>Package each part of your applications in containers</p>
+            </div>
+            <div class="col col-4 item">
+                <figure>
+                    <img alt="Kubernetes" height="48" src="{{ "/img/home/kubernetes.png" | relURL }}" width="48">
+                </figure>
+                <h3>Kubernetes</h3>
+                <p>Schedule and manage the containers with Kubernetes to optimize resource utilization</p>
+            </div>
+            <div class="col col-4 item">
+                <figure>
+                    <img alt="Microservices" height="48" src="{{ "/img/home/microservices.png" | relURL }}" width="48">
+                </figure>
+                <h3>Microservices</h3>
+                <p>Segment all applications into microservices without monolithic</p>
+            </div>
+            <div class="row gutters">
+                <div class="col col-4 item">
+                    <figure>
+                        <img alt="Scalable" height="48" src="{{ "/img/home/scalable.png" | relURL }}" width="48">
+                    </figure>
+                    <h3>Scalable</h3>
+                    <p>Support scalable services efficiently and quickly</p>
+                </div>
+                <div class="col col-4 item">
+                    <figure>
+                        <img alt="Istio" height="48" src="{{ "/img/home/istio.png" | relURL }}" width="48">
+                    </figure>
+                    <h3>Istio</h3>
+                    <p>Make microservices management more easy with Istio</p>
+                </div>
+                <div class="col col-4 item">
+                    <figure>
+                        <img alt="DevOps" height="48" src="{{ "/img/home/devops.png" | relURL }}" width="48">
+                    </figure>
+                    <h3>DevOps</h3>
+                    <p>Release quickly and efficiently to experiment with solutions</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }} {{ define "footer"}} {{ partial "footer" .}} {{end}}

@@ -1,0 +1,39 @@
+<div class="show-sm">
+    <div id="nav-toggle-box">
+      <div id="nav-toggle-brand">
+        <a href="/">{{ .Site.Title }}</a>
+      </div><a data-component="toggleme" data-target="#top" href="#" id="nav-toggle"><i class="kube-menu"></i></a>
+    </div>
+  </div>
+  <div class="hide-sm" id="top">
+    <div id="top-brand">
+      <a href="/" title="home">{{ .Site.Title }}</a>
+    </div>
+    <nav id="top-nav-main">
+      <ul>
+       {{ $currentPage := . }}
+       {{ range .Site.Menus.main }}
+    <li><a href="{{ .URL }}" {{if  $currentPage.IsMenuCurrent "main" . }} class="active"{{end}}>{{ .Name }}</a></li>
+    {{end}}
+      </ul>
+    </nav>
+    <nav id="top-nav-extra"> 
+      <ul>
+        {{ range .Site.Menus.extra }} 
+          <li>
+            <a href="{{ .Permalink }}">{{ .Name }}</a>
+          </li>
+        {{ end }}  
+      </ul>
+    </nav>
+  </div>
+  <!-- baidu analytics -->
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?9ecdd3affaa75560d5267f0283c8ad65";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
